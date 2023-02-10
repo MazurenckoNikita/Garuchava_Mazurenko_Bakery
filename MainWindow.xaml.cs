@@ -32,8 +32,8 @@ private void Button_Click(object sender, RoutedEventArgs e)
             {
                 if (PassTB.Password.Length > 0)       
                 {              
-                    DataTable dt_user = mainWindow.Select("SELECT * FROM [DB_Garuchava_Mazurenko_Bakery]. WHERE [login] = '" + loginTb.Text + "' AND [password] = '" + PassTB.Password + "'");
-                    if (dt_user.Rows.Count > 0)
+                    
+                    if (string.IsNullOrWhiteSpace(loginTb.Text))
                     {
                         MessageBox.Show("Пользователь авторизовался");     
                     }
@@ -42,6 +42,11 @@ private void Button_Click(object sender, RoutedEventArgs e)
                 else MessageBox.Show("Введите пароль"); 
             }
             else MessageBox.Show("Введите логин"); 
+        }
+
+        private void loginTb_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
     }

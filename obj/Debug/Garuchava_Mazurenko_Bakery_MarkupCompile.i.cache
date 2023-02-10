@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\IMac6\source\repos\Garuchava_Mazurenko_Bakery\App.xaml
-8-455082342
+9-301296928
 3-207327829
-301110141609
+31-637934484
 18-331821575
-MainWindow.xaml;Pages\BasketPage.xaml;Pages\ListOfOrdersxaml.xaml;Pages\ListOfProducts.xaml;Pages\Payment.xaml;Pages\SalePage.xaml;Windows\ClientWindows\Clients.xaml;Windows\SellerWindows\Seller.xaml;
+MainWindow.xaml;Pages\BasketPage.xaml;Pages\ListOfOrdersxaml.xaml;Pages\ListOfProducts.xaml;Pages\Payment.xaml;Pages\SalePage.xaml;Windows\ClientWindows\Clients.xaml;Windows\ClientWindows\WindowRegistration.xaml;Windows\SellerWindows\Seller.xaml;
 
-False
+True
 
