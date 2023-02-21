@@ -1,18 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
+    
+using Garuchava_Mazurenko_Bakery.Windows.ClientWindows;
 namespace Garuchava_Mazurenko_Bakery
 {
     /// <summary>
@@ -44,11 +33,50 @@ private void Button_Click(object sender, RoutedEventArgs e)
             else MessageBox.Show("Введите логин"); 
         }
 
-        private void loginTb_TextChanged(object sender, TextChangedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            WindowRegistration windowRegistration = new WindowRegistration();
+            windowRegistration.Show();
+            this.Close();   
+        }
 
+        private void loginTb_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            
+        }
+
+        private void loginTb_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (loginTb.Text == "Username")
+            {
+                loginTb.Clear();
+            }
+        }
+
+        private void loginTb_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(loginTb.Text))
+            {
+                loginTb.Text = "Username";
+            }
+        }
+
+        private void PassTB_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (PassTB.Text == "Password")
+            {
+                PassTB.Clear();
+            }
+        }
+
+        private void PassTB_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(PassTB.Text))
+            {
+                PassTB.Text = "Password";
+            }
         }
     }
-    }
+}
 
 

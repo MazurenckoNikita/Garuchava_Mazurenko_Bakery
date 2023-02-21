@@ -108,7 +108,10 @@
                              HorizontalContentAlignment="Left"
                              Opacity="0.5"
                              Height="25"
-                             Margin="63,0,0,0" TextChanged="loginTb_TextChanged"/>
+                             Margin="63,0,0,0" TextChanged="loginTb_TextChanged"
+                             GotFocus="loginTb_GotFocus"
+                             LostFocus="loginTb_LostFocus"
+                             />
                 </StackPanel>
                 <Border Width="250"
                         Height="2"
@@ -130,7 +133,10 @@
                              HorizontalContentAlignment="Left"
                              Opacity="0.5"
                              Height="25"
-                             Margin="63,0,0,0"/>
+                             Margin="63,0,0,0"
+                             GotFocus="PassTB_GotFocus" 
+                             LostFocus="PassTB_LostFocus"    
+                                 />
                 </StackPanel>
                 <Border Width="250"
                         Height="2"
@@ -140,7 +146,7 @@
 
                 <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
                     <Button Width="100" Height="40" Content="LOGIN" Margin="60,0,60,0" Click="Button_Click"/>
-                    <Button Width="100" Height="40" Content="REGISTER"/>
+                <Button Width="100" Height="40" Content="REGISTER" Click="Button_Click_1"/>
                 </StackPanel>
 
             </StackPanel>

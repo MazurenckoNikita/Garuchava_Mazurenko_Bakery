@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Users\Nikita\Desktop\Garuchava_Mazurenko_Bakery\obj\Debug\
+C:\Users\IMac6\Desktop\Мазуренко Гаручава\Garuchava_Mazurenko_Bakery\obj\Debug\
 Garuchava_Mazurenko_Bakery
 none
 false
 DEBUG;TRACE
-D:\Users\Nikita\Desktop\Garuchava_Mazurenko_Bakery\App.xaml
+C:\Users\IMac6\Desktop\Мазуренко Гаручава\Garuchava_Mazurenko_Bakery\App.xaml
 920369862
 31887458982
-30-223889531
-18-742922101
+31-292882664
+18-617890891
 MainWindow.xaml;Pages\BasketPage.xaml;Pages\ListOfOrdersxaml.xaml;Pages\ListOfProducts.xaml;Pages\Payment.xaml;Pages\SalePage.xaml;Windows\ClientWindows\Clients.xaml;Windows\ClientWindows\WindowRegistration.xaml;Windows\SellerWindows\Seller.xaml;
 
-False
+True
 
