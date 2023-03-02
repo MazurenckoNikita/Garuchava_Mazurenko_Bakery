@@ -1,7 +1,19 @@
 ﻿using System;
+using System.Runtime.Remoting.Contexts;
 using System.Windows;
-    
+using Garuchava_Mazurenko_Bakery.DB;
 using Garuchava_Mazurenko_Bakery.Windows.ClientWindows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using System.Threading.Tasks;
+using System.Linq;
+using System.Collections.Generic;
+using static Garuchava_Mazurenko_Bakery.ClassHelper.EFClass;
 namespace Garuchava_Mazurenko_Bakery
 {
     /// <summary>
@@ -17,16 +29,21 @@ namespace Garuchava_Mazurenko_Bakery
         
 private void Button_Click(object sender, RoutedEventArgs e)
         {
+
+            var userAuth = ContextDB.ClientAccount.ToList()
+            .Where(i => i.Email == loginTb.Text && i.Password == PassTB.Password)
+            .FirstOrDefault();
+
             if (loginTb.Text.Length > 0) 
             {
                 if (PassTB.Password.Length > 0)       
                 {              
                     
-                    if (string.IsNullOrWhiteSpace(loginTb.Text))
+                    if (string.IsNullOrWhiteSpace(loginTb.Text) || loginTb = "Username")
                     {
-                        MessageBox.Show("Пользователь авторизовался");     
+                        MessageBox.Show("Пользователя не найден");     
                     }
-                    else MessageBox.Show("Пользователя не найден");
+                    else MessageBox.Show("Пользователь авторизовался");
                 }
                 else MessageBox.Show("Введите пароль"); 
             }
@@ -63,7 +80,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
         private void PassTB_GotFocus(object sender, RoutedEventArgs e)
         {
-            if (PassTB.Text == "Password")
+            if (PassTB.Password == "Password")
             {
                 PassTB.Clear();
             }
@@ -71,9 +88,9 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
         private void PassTB_LostFocus(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(PassTB.Text))
+            if (string.IsNullOrEmpty(PassTB.Password))
             {
-                PassTB.Text = "Password";
+                PassTB.Password = "Password";
             }
         }
     }
