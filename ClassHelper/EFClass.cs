@@ -8,6 +8,6 @@ namespace Garuchava_Mazurenko_Bakery.ClassHelper
 {
     public static class EFClass
     {
-        public static DB.Entities ContextDB { get; } = new DB.Entities();
+        public static DB.Entities1 ContextDB { get; } = new DB.Entities1();
     }
 }

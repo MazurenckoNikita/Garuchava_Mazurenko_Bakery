@@ -36,9 +36,9 @@ namespace Garuchava_Mazurenko_Bakery.Windows.ClientWindows
                 return;
             }
 
-            ContextDB.ClientAccount.Add(new DB.ClientAccount()
+            ContextDB.UserAccount.Add(new DB.UserAccount()
             {
-                AccountName = Tb_login.Content.ToString(),
+                Login = Tb_login.Content.ToString(),
                 Password = PassTB.Password,
                 Email = Tb_login.Content.ToString(),
             });

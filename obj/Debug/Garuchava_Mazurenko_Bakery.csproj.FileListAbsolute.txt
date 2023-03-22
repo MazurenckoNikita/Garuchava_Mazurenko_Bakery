@@ -152,3 +152,6 @@ C:\Users\IMac6\Desktop\Мазуренко Гаручава\Garuchava_Mazurenko_B
 C:\Users\IMac6\Desktop\Мазуренко Гаручава\Garuchava_Mazurenko_Bakery\obj\Debug\Garuchava_Mazurenko_Bakery.csproj.GenerateResource.cache
 C:\Users\IMac6\Desktop\Мазуренко Гаручава\Garuchava_Mazurenko_Bakery\obj\Debug\Garuchava_Mazurenko_Bakery.csproj.CoreCompileInputs.cache
 C:\Users\IMac6\Desktop\Мазуренко Гаручава\Garuchava_Mazurenko_Bakery\obj\Debug\Garuchava_Mazurenko_Bakery.csproj.CopyComplete
+C:\Users\IMac6\Desktop\Мазуренко Гаручава\Garuchava_Mazurenko_Bakery\obj\Debug\Windows\ProductListWindow.g.cs
+C:\Users\IMac6\Desktop\Мазуренко Гаручава\Garuchava_Mazurenko_Bakery\obj\Debug\Windows\AddEditProductWindow.g.cs
+C:\Users\IMac6\Desktop\Мазуренко Гаручава\Garuchava_Mazurenko_Bakery\obj\Debug\Windows\CartProductWindow.g.cs

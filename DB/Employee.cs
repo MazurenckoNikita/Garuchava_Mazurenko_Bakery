@@ -20,9 +20,11 @@ namespace Garuchava_Mazurenko_Bakery.DB
         public string Patronymic { get; set; }
         public int MedBookID { get; set; }
         public int GenderID { get; set; }
+        public int RoleID { get; set; }
+        public int IDUser { get; set; }
     
         public virtual Gender Gender { get; set; }
         public virtual MedBook MedBook { get; set; }
-        public virtual MedBook MedBook1 { get; set; }
+        public virtual UserAccount UserAccount { get; set; }
     }
 }

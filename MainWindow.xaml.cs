@@ -30,7 +30,7 @@ namespace Garuchava_Mazurenko_Bakery
 private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            var userAuth = ContextDB.ClientAccount.ToList()
+            var userAuth = ContextDB.UserAccount.ToList()
             .Where(i => i.Email == loginTb.Text && i.Password == PassTB.Password)
             .FirstOrDefault();
 
@@ -39,7 +39,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
                 if (PassTB.Password.Length > 0)       
                 {              
                     
-                    if (string.IsNullOrWhiteSpace(loginTb.Text) || loginTb = "Username")
+                    if (string.IsNullOrWhiteSpace(loginTb.Text))
                     {
                         MessageBox.Show("Пользователя не найден");     
                     }
